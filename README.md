@@ -1,6 +1,6 @@
 # lambda-star
 
-1:  simple-lambda 简单的lambda使用
+1：lambda的简单使用
 
 2：lambda的一些示例
 
