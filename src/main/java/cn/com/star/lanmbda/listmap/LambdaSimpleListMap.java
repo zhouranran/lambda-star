@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  * 3： list 转 map groupingby
  * 4： list 中部分属性转map
  * 5： list 转set
- * 6： map 遍历
+ * 6： map 遍历与排序
  * 7： map转list
  * 8： map中提取value 或者key add to list
  */
