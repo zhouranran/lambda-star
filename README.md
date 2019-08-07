@@ -6,7 +6,7 @@
       * {parameters}-> expression (表达式方式)
       * {parameters}-> {statements;} (语句块)
      
-     Lambda 的重要特性:
+     lambda 的重要特性:
       * 可选类型声明: 不需要声明参数类型， 编译器会统一识别参数类型
       * 可选的参数圆括号：一个参数无需定义圆括号但是多个参数是需要定义圆括号
       * 可选的大括号： 如果主体只包含一个语句，就不需要使用大括号
@@ -14,12 +14,12 @@
         
 2：lambda的一些示例
      
-     Lambda 的一些简单场景应用:
+     lambda 的一些简单场景应用:
       * Thread new Runnable eg:()->{statements;};
       * Vaadin or Swing addListener eg:e->{statements;};
       * Predicate的使用 提供or 或者and method 并传入filter.
-      * Create a list after filter eg:collect(Collectors.toList())
-      * Joining the list to string eg:collect(Collectors.joining(", "))
+      * create a list after filter eg:collect(Collectors.toList())
+      * joining the list to string eg:collect(Collectors.joining(", "))
      
 
 3：stream流的方法使用
@@ -33,7 +33,7 @@
 
 4：lambda在list中典型案例
 
-    Lambda 在list中的应用
+    lambda 在list中的应用
       * 1： list sorted comparing
       * 2： list filter predicate
       * 3： list 转 map groupingby
@@ -42,7 +42,7 @@
 
 5：lambda在map中的典型案例
 
-    Lambda 在map中的应用
+    lambda 在map中的应用
       * 1： map 遍历与排序
       * 2： map转list
       * 3： map中提取value 或者key add to list
