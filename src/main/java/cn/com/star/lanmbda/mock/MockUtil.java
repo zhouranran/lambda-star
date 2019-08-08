@@ -1,14 +1,16 @@
 package cn.com.star.lanmbda.mock;
 
 import cn.com.star.lanmbda.model.Student;
-import cn.com.star.lanmbda.model.Teacher;
+import cn.com.star.lanmbda.model.Trader;
+import cn.com.star.lanmbda.model.Transaction;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MockUtil {
     //get the list of student
-    public static List<Student> getStudents(){
+    public static List<Student> getStudents() {
         List<Student> studentList = new ArrayList<>();
         Student student = new Student();
         student.setId(1);
@@ -33,8 +35,21 @@ public class MockUtil {
         return studentList;
     }
 
-    //get the list of teacher
-    public static List<Teacher> getTeachers(){
-        return null;
+    public static List<Transaction> getTransactionList() {
+
+        Trader raoul = new Trader("Raoul", "Cambridge");
+        Trader mario = new Trader("Mario", "Milan");
+        Trader alan = new Trader("Alan", "Cambridge");
+        Trader brian = new Trader("Brian", "Cambridge");
+
+        List<Transaction> transactions = Arrays.asList(
+                new Transaction(brian, 2011, 300),
+                new Transaction(raoul, 2012, 1000),
+                new Transaction(raoul, 2011, 400),
+                new Transaction(mario, 2012, 710),
+                new Transaction(mario, 2012, 700),
+                new Transaction(alan, 2012, 950));
+
+        return  transactions;
     }
 }
